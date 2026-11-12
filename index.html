@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalUz - Professional Futbol olami</title>
+    <!-- Google Fonts va FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        header {
+            background: #1e293b;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #334155;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #38bdf8;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo i {
+            color: #22c55e;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 5%;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: #22c55e;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #16a34a;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-left: 5px solid #22c55e;
+            padding-left: 15px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .news-card {
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .news-content {
+            padding: 20px;
+        }
+        .news-content span {
+            font-size: 0.85rem;
+            color: #38bdf8;
+            font-weight: 600;
+        }
+        .news-content h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #f1f5f9;
+        }
+        .news-content p {
+            font-size: 0.95rem;
+            color: #94a3b8;
+        }
+        footer {
+            background: #1e293b;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            color: #64748b;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-futbol"></i> GoalUz
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Bosh sahifa</a></li>
+                <li><a href="#">Yangiliklar</a></li>
+                <li><a href="#">O'yinlar va Jonli</a></li>
+                <li><a href="#">Transferlar</a></li>
+                <li><a href="#">Bog'lanish</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Futbol olamidagi eng so'nggi yangiliklar</h1>
+        <p>Eng tezkor xabarlar, transferlar, tahlillar va o'yin natijalari bizda.</p>
+        <a href="#" class="btn">Yangiliklarni o'qish</a>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">So'nggi Yangiliklar</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=600&q=80" alt="News 1">
+                <div class="news-content">
+                    <span>Yevropa Chempionlar Ligasi</span>
+                    <h3>Chorak finalda qaysi jamoalar to'qnash keladi?</h3>
+                    <p>Yevropaning eng nufuzli musobaqasida pley-off bosqichi qizg'in pallaga kirdi...</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=600&q=80" alt="News 2">
+                <div class="news-content">
+                    <span>Transferlar</span>
+                    <h3>Yozgi transfer oynasida kutilayotgan yirik xaridlar</h3>
+                    <p>Dunyoning yetakchi klublari o'z tarkibini kuchaytirish uchun katta mablag' ajratmoqda...</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1563857345155-22b67f13b631?auto=format&fit=crop&w=600&q=80" alt="News 3">
+                <div class="news-content">
+                    <span>O'zbekiston Futboli</span>
+                    <h3>Milliy terma jamoamiz jahon chempionatiga tayyorgarlikni boshladi</h3>
+                    <p>Murabbiylar shtabi yig'inga chaqirilgan futbolchilar ro'yxatini e'lon qildi...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GoalUz. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+</body>
+</html>
